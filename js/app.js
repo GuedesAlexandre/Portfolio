@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 });
 jQuery(window).scroll(function () {
-    if ((jQuery("window").scrollTop() + jQuery(window).height() - $("footer").height()) > $(".arrow").height()){
+    if (((jQuery("window").scrollTop() + jQuery(window).height()) - $("footer").height()) > $(".arrow").height()){
         $(".arrow").toggleClass("arrow-bottom");
     }else{
         $(".arrow").toggleClass(".arrow");
