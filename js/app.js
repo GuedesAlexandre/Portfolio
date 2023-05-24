@@ -4,11 +4,12 @@ console.log(jQuery(window).scrollTop());
 $( document ).ready(function() {
     jQuery(window).scroll(function () {
 
-	    if (jQuery(window).scrollTop() == 0)
-	        console.log('Scroll en haut de page');
+	    if (jQuery(window).scrollTop() + $("header").height() == 0)
+	        $(".arrow").toggleClass("arrow-bottom");
 
 	    else if (jQuery(window).height() + jQuery(window).scrollTop() == jQuery(document).height())
-	        console.log('Scroll en bas de page');
+        $(".arrow").toggleClass("arrow-bottom");
+    
 
 });
 jQuery(window).scroll(function () {
