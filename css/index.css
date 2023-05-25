@@ -285,14 +285,20 @@ html {
     margin-top:300px;
 }
 
-.works {
+#works {
     display: flex;
     justify-content: center;
 
 
 }
-
-.works .card {
+.Mentions{
+     color:white;
+}
+.Mentions:hover{
+    cursor:pointer;
+    color: #03FABF;
+}
+#works .card {
     margin-right: 25px;
     transition: transform 330ms ease-in-out;
     display: flex;

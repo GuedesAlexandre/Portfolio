@@ -1,4 +1,4 @@
-console.log(jQuery(window).scrollTop());
+
 
 $(document).ready(function () {
     jQuery(window).scroll(function () {
@@ -11,13 +11,20 @@ $(document).ready(function () {
 
 
     });
+    let a = jQuery("body").height() -$(window).height() - $("footer").height();
+    console.log($("body").height());
+    console.log($("footer").height());
+    console.log("taille testé " + a );
     jQuery(window).scroll(function () {
-        if (((jQuery("window").scrollTop() + jQuery(window).height()) - $("footer").height()) > $(".arrow").height()) {
-            $(".arrow").toggleClass("arrow-bottom");
+        console.log(jQuery(window).scrollTop());
+        if (a < $(window).scrollTop()) {
+            $(".arrow").addClass("arrow-bottom");
+            
         } else {
-            $(".arrow").toggleClass(".arrow");
+            $(".arrow").removeClass("arrow-bottom");
         }
     })
+    /*
     let X = window.innerHeight;
     let Y = window.innerWidth;
     console.log(X);
@@ -31,6 +38,6 @@ $(document).ready(function () {
     console.log($(".arrow").height());
     let heightofarrow = $(".arrow").height();
     let heightoffooter = $("footer").height();
-    console.log($("footer").position());
+    console.log($("footer").position());*/
 
 })
