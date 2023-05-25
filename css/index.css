@@ -190,7 +190,9 @@ h1 {
     margin-bottom: 50px;
 
 }
-
+a{
+    text-decoration: none;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -208,8 +210,8 @@ html {
 
 .btn:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    transition: transform 500ms ease-in-out;
+    background-color: #051D40;
+    color:white;
 
 
 }
@@ -349,8 +351,9 @@ html {
 
 .btn2:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    transition: transform 500ms ease-in-out;
+    background-color: #051D40;
+    color:white;
+  
 }
 
 .btncontainer {
@@ -375,6 +378,7 @@ footer {
     width: 60px;
     height: 60px;
     margin: 12px;
+    color:white;
 
 }
 
