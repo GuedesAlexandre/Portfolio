@@ -24,6 +24,14 @@ $(document).ready(function () {
             $(".arrow").removeClass("arrow-bottom");
         }
     })
+
+
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".navlinks")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
     /*
     let X = window.innerHeight;
     let Y = window.innerWidth;
