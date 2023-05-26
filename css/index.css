@@ -329,6 +329,7 @@ html {
     object-fit: cover;
     border-radius: 10px;
     z-index:30;
+    image-rendering: optimizeQuality;
   
 }
 
@@ -347,6 +348,7 @@ html {
     transition: opacity 0.5s;
     font-size : 2rem;
     font-family: 'Bebas Neue', sans-serif;
+    
 }
 .txtsurvol:hover{
     opacity:100;
