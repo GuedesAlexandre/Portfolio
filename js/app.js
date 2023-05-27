@@ -24,6 +24,14 @@ $(document).ready(function () {
             $(".arrow").removeClass("arrow-bottom");
         }
     })
+    $(window).resize(function (){
+        let a = jQuery("body").height() -$(window).height() - $("footer").height();
+        if(a < $(window).scrollTop()){
+            $(".arrow").addClass("arrow-bottom");
+        }else{
+            $(".arrow").removeClass("arrow-bottom");
+        }
+    })
 
 
     const menuHamburger = document.querySelector(".menu-burger")

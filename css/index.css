@@ -443,7 +443,7 @@ footer {
     display:none;
     width:40px;
     height:40px;
-   position:fixed;
+   position:sticky;
    top:0;
 left:0;
    margin-top: 2.2%;
