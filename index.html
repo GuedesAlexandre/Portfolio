@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -50,14 +51,14 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div class="Aboutcontainer">
-    <div class="title">
+    <div class="title" data-aos ="fade-up">
         <h1>
             ABOUT ME
         </h1>
         <br>
         <hr>
     </div>
-    <div id="mainAbout">
+    <div id="mainAbout" data-aos = "fade-up">
         <div class="cv">
             <p class="présentation">Je m'appelle <strong>Alexandre Guedes</strong>, j'ai 19 ans et je suis originaire de
                 Paris.
@@ -70,10 +71,10 @@
                 de <strong>créer,programmer</strong>et <strong>donner vie</strong> à mes idées.
             </p>
             <a href="ressources/GuedesAlexandre_CV.pdf">
-                <button class="btn">VOIR MON CV</button>
+                <button class="btn" data-aos = "fade-up">VOIR MON CV</button>
             </a>
         </div>
-        <img src="img/About.png" alt="profile" id="profil">
+        <img src="img/About.png" alt="profile" id="profil" data-aos = "fade-up">
     </div>
 
 
@@ -82,14 +83,14 @@
     <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
 </a>
 <div class="Skillscontainer">
-    <div class="title">
+    <div class="title" data-aos = "fade-up">
         <h1>
             SKILLS
         </h1>
         <br>
         <hr>
     </div>
-    <div id="skills">
+    <div id="skills" data-aos = "fade-up">
         <span class="skilltitle">Développement</span>
 
         <div class="icon">
@@ -104,8 +105,8 @@
 
         </div>
 
-        <span class="skilltitle">Graphisme, Design et Audiovisuelle</span>
-        <div class="icongraph">
+        <span class="skilltitle" data-aos = "fade-up">Graphisme, Design et Audiovisuelle</span>
+        <div class="icongraph" data-aos = "fade-up">
             <div class="icone"><img src="img/icons8-adobe-photoshop-70.png" class="icone"></div>
             <div class="icone"><img src="img/icons8-adobe-indesign-100 (1).png" class="icone"></div>
 
@@ -118,7 +119,7 @@
 </div>
 </div>
 <div class="Workscontainer">
-    <div class="title">
+    <div class="title" data-aos = "fade-up">
         <h1>
             WORKS
         </h1>
@@ -127,7 +128,7 @@
     </div>
 
     <div id="works">
-        <div class="card">
+        <div class="card" data-aos = "fade-up" >
         <img src="img/Matos.png" class="imgwork">
            
             <div class="txtsurvol">
@@ -136,7 +137,7 @@
             </div>
             
         </div>
-        <div class="card">
+        <div class="card" data-aos = "fade-up">
             
             <img src="img/Damso.png" class="imgwork">
              
@@ -145,7 +146,7 @@
             
             </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos = "fade-up">
            
             <img src="img/Xspace.png" class="imgwork">
              
@@ -171,22 +172,33 @@
         <span>©Alexandre Guedes | 2023 | <a href="mentions.html" class="Mentions">Mentions Légales</a></span>
     </div>
 </footer>
-<script>
-    ScrollReveal().reveal('.présentation', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('#profil', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.btn', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.contact', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.title', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.skills', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.icone', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.icon', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.skilltitle', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.card', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.btn2', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.contact', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
-    ScrollReveal().reveal('.mentions', {delay: 100}, {mobile: false}, {easing: 'ease-in-out'});
 
-</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 
 <script src="js/app.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
