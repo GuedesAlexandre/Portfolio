@@ -137,7 +137,7 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: 'Josefin Sans', sans-serif;
 
 
@@ -173,4 +173,81 @@ html {
     transform: scale(1.2);
     transition: transform 330ms ease-in-out;
     cursor: pointer;
+}
+.m-container{
+    margin-top:12%;
+
+}
+.title {
+    margin-left: 80px;
+   
+
+}
+.maintitle{
+    font-size: 4rem;
+}
+.write{
+    width:40%;
+    margin-left:110px;
+}
+footer {
+    background-color: black;
+    height: 150px;
+    color: white;
+    margin-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.b-container{
+    margin-top:4%;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact .clinks {
+    width: 60px;
+    height: 60px;
+    margin: 12px;
+    color:white;
+
+}
+
+.mentions {
+    display: flex;
+    justify-content: center;
+}
+
+.clinks:hover {
+    cursor: pointer;
+    color: #03FABF;
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
+
+.arrow-bottom {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.arrow-bottom:hover {
+    color: #03FABF;
+    transform: scale(1.2);
+    transition: transform 330ms ease-in-out;
+    cursor: pointer;
+}
+.Mentions{
+    color:white;
+}
+.Mentions:hover{
+   cursor:pointer;
+   color: #03FABF;
 }

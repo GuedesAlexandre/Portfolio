@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
     });
-    let a = jQuery("body").height() -$(window).height() - $("footer").height();
+    let a = jQuery("body").height() - $(window).height() - $("footer").height();
     console.log($("body").height());
     console.log($("footer").height());
     console.log("taille testé " + a );
