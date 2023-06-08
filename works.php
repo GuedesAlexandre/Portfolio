@@ -4,6 +4,7 @@
 <head>
     <title>Works</title>
     <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="css/works.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -29,7 +30,8 @@
 <?php
 if(isset($_GET["works"])){
     $Nom = $_GET["works"];
-    $conn = mysqli_connect("localhost", "root", "root", "SAE");
+    $conn = mysqli_connect("localhost", "aguedes", "0qs;Jzm?cINP", "aguedes_SAE");
+    mysqli_set_charset($conn, "utf8mb4");
     $sql = "SELECT * FROM Projets WHERE Nom = '$Nom'";
     $resultat = mysqli_query($conn, $sql);
     if(mysqli_num_rows($resultat)>0){
@@ -71,11 +73,11 @@ if(isset($_GET["works"])){
         </div>
         <div class="m-container">
         <div class="Title">
-            <span class="tit">Langages utilisés</span>
+            <span class="tit">Outils utilisés</span>
 
         </div>
         </div>
-        <div class="icon">
+        <div class="icon">          
         '.$data["Icones"].'
         </div>
         <a href="#block">

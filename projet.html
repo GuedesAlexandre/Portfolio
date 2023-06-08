@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Alexandre Guedes</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/projet.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+
+<header id="block">
+    <nav class="navbar">
+        <div class="navlinks">
+            <ul>
+                <li><a href="#mainAbout">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#works"> WORKS</a></li>
+                <li class="last"><a href="#foot">CONTACT</a></li>
+                
+            </ul>
+               
+        </div>
+  
+    </nav>
+</header>
+<div class="container">
+    <div class="Nametitle">
+        <strong><h1>MES<br></h1></strong>
+            <strong><h1 class="name">PROJETS</h1></strong>
+              
+    </div>
+
+    <div class="Illustration">
+        <img src="img/4401280.jpg" alt="illustration" class="illustration">
+    </div>
+</div>
+<div class="container2">
+  <div id="works">
+        <div class="card" data-aos = "fade-up" >
+        <img src="img/Matos.png" class="imgwork">
+           
+            <div class="txtsurvol">
+            <a href="works.php?works=MATOS"><span class="span">SAE 2.03 - Matos</span></a>
+            
+            </div>
+            
+        </div>
+        <div class="card" data-aos = "fade-up">
+            
+           <img src="img/Damso.png" class="imgwork">
+             
+            <div class="txtsurvol">
+             <a href="works.php?works=LE SITE SUR DAMSO"><span class="span">SAE 1.05 - Le site sur Damso</span></a>
+            
+            </div>
+        </div>
+        <div class="card" data-aos = "fade-up">
+           
+            <img src="img/Xspace.png" class="imgwork">
+             
+            <div class="txtsurvol">
+            <a href="works.php?works=Xspace"><span class="span">SAE 2.02 - Xspace </span></a>
+            
+            </div>
+        </div>
+        <div class="card" data-aos = "fade-up" >
+        <img src="img/1stportoflio.png" class="imgwork">
+           
+            <div class="txtsurvol">
+            <a href="works.php?works=Portfolio"><span class="span">1st Design Portfolio</span></a>
+            
+            </div>
+            
+        </div>
+        <div class="card" data-aos = "fade-up" >
+        <img src="img/totebag.jpg" class="imgwork">
+           
+            <div class="txtsurvol">
+            <a href="works.php?works=Tote bag"><span class="span">Tote bag</span></a>
+            
+            </div>
+            
+        </div>
+        <div class="card" data-aos = "fade-up" >
+        <img src="img/Spotify.png" class="imgwork">
+           
+            <div class="txtsurvol">
+            <a href="works.php?works=Spotify"><span class="span">Festival Spotify</span></a>
+            
+            </div>
+            
+        </div>      
+    </div>
+    </div>
+    <a href="#block">
+    <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
+</a>
+    <footer id="foot">
+    <div class="contact">
+        <a href="https://www.linkedin.com/in/alexandre-guedesmmi/"><ion-icon name="logo-linkedin" class="clinks"></ion-icon></a>
+        <a href="https://github.com/GuedesAlexandre"><ion-icon name="logo-github" class="clinks"></ion-icon></a>
+        <a href="mailto:alexandre.guedes@edu.univ-eiffel.fr"><ion-icon name="mail-outline" class="clinks"></ion-icon></a>
+    </div>
+    <div class="mentions">
+        <span>©Alexandre Guedes | 2023 | <a href="mentions.html" class="Mentions">Mentions Légales</a></span>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
